@@ -4,32 +4,7 @@ compatibility_date = "2024-01-01"
 account_id = "YOUR_ACCOUNT_ID"
 workers_dev = true
 
-# متغيرات البيئة
-[env.production]
-route = "https://api.yourdomain.com/*"
-zone_id = "YOUR_ZONE_ID"
-
-[env.development]
-vars = { ENVIRONMENT = "development" }
-
-# KV Namespace للنقاط
 [[kv_namespaces]]
 binding = "GAME_KV"
 id = "YOUR_KV_NAMESPACE_ID"
 preview_id = "YOUR_KV_NAMESPACE_PREVIEW_ID"
-
-# R2 Bucket للتخزين (اختياري)
-[[r2_buckets]]
-bucket_name = "game-saves"
-binding = "GAME_BUCKET"
-preview_bucket_name = "game-saves-preview"
-
-# CORS إذا لزم الأمر
-[build]
-command = "npm run build"
-cwd = "."
-watch_paths = ["src/**"]
-
-# Build configuration
-[build.upload]
-format = "service-worker"

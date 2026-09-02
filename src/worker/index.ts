@@ -1,7 +1,7 @@
 import { Router } from 'itty-router';
-
+import type { KVNamespace, R2Bucket } 
+from '@cloudflare/workers-types';
 const router = Router();
-
 interface GameScore {
   userId: string;
   level: number;
@@ -234,15 +234,4 @@ router.get('/api/health', () => {
 router.all('*', () => {
   return new Response(
     JSON.stringify({ error: 'Not found', message: 'The requested resource does not exist' }),
-    { status: 404, headers: { 'Content-Type': 'application/json' } }
-  );
-});
-
-export default {
-  fetch: router.handle,
-};
-
-declare global {
-  const GAME_KV: KVNamespace;
-  const GAME_BUCKET?: R2Bucket;
-}
+    { status: 404, headers: { 'Content-Type': 'application/

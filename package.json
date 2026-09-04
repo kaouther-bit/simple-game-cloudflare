@@ -18,13 +18,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260702.1",
+    "@cloudflare/workers-types": "^5.20260904.1",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "build": "^0.1.4",
     "npm": "^11.19.1",
     "run": "^2.1.0",
     "typescript": "^5.0.0",
-    "wrangler": "^3.20.0"
+    "wrangler": "^4.129.0"
   }
 }

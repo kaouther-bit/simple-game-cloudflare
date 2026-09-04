@@ -30,7 +30,9 @@
     "allowJs": true,
     "noEmit": true,
     "moduleResolution": "node",
-    "types": ["@cloudflare/workers-types"],
+    "types": [
+      "@cloudflare/workers-types"
+    ],
     "plugins": [
       {
         "name": "next"
@@ -38,14 +40,21 @@
     ]
   },
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.d.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    ".next",
-    "dist"
-  ]
+"exclude": [
+  "node_modules",
+  ".next",
+  "dist",
+  "src/worker"
+]
 }
+
+    
+     
+  
+    

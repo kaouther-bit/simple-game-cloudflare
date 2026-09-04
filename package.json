@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^4.27.0",
-    "@clerk/nextjs": "^4.27.0",
+    "@clerk/nextjs": "^6.39.6",
     "axios": "^1.6.0",
     "itty-router": "^5.0.24",
     "next": "^14.0.0",

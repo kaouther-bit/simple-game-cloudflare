@@ -235,3 +235,5 @@ router.all('*', () => {
   return new Response(
     JSON.stringify({ error: 'Not found', message: 'The requested resource does not exist' }),
     { status: 404, headers: { 'Content-Type': 'application/
+
+      

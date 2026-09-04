@@ -1,4 +1,4 @@
-name = "simple-game-backend"
+ name = "simple-game-backend"
 main = "src/worker/index.ts"
 compatibility_date = "2024-01-01"
 account_id = "YOUR_ACCOUNT_ID"
@@ -8,3 +8,4 @@ workers_dev = true
 binding = "GAME_KV"
 id = "YOUR_KV_NAMESPACE_ID"
 preview_id = "YOUR_KV_NAMESPACE_PREVIEW_ID"
+ 

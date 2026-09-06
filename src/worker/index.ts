@@ -233,7 +233,7 @@ router.get('/api/health', () => {
 
 router.all('*', () => {
   return new Response(
-    JSON.stringify({ error: 'Not found', message: 'The requested resource does not exist' }),
-    { status: 404, headers: { 'Content-Type': 'application/
+JSON.stringify({ error: 'Not found', message: 'The requested resource was not found' }),
+{ status: 404, headers: { 'Content-Type': 'application/json' } }
 
       

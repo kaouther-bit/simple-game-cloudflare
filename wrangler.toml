@@ -1,7 +1,7 @@
  name = "simple-game-backend"
 main = "src/worker/index.ts"
 compatibility_date = "2024-01-01"
-account_id = "YOUR_ACCOUNT_ID"
+ account_id = "ca48cfc92e1f651acf2cefa045bd614f"
 workers_dev = true
 
 [[kv_namespaces]]

@@ -230,10 +230,21 @@ router.get('/api/health', () => {
     { headers: { 'Content-Type': 'application/json' } }
   );
 });
-
-router.all('*', () => {
+router.all("*", () => {
   return new Response(
-JSON.stringify({ error: 'Not found', message: 'The requested resource was not found' }),
-{ status: 404, headers: { 'Content-Type': 'application/json' } }
+    JSON.stringify({
+      error: "Not found",
+      message: "The requested resource was not found"
+    }),
+    {
+      status: 404,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
+});
 
-      
+export default {
+  fetch: router.handle
+};
